@@ -6,7 +6,7 @@ from os.path import join
 _data = namedtuple('datapoint', ['video1', 'video2', 'label_csv', 'cal_csv'])
 
 
-def get_videos_and_csv_labels_list(base_path="/data/projects/swat/users/eladc/project/dataset_src/all_dig_data"):
+def get_videos_and_csv_labels_list(base_path="/project/dataset_src/all_dig_data"):
     return [
         _data(join(base_path, "10.05.19", "1", "dig", "cut_dig", "1", "f_20190510_150806_20190510_151419.avi"),
               join(base_path, "10.05.19", "1", "dig", "cut_dig", "1", "r_20190510_150806_20190510_151832.avi"),

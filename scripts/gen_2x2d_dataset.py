@@ -58,7 +58,7 @@ def show_image_with_keypoints(i, keypoints):
 
 
 if __name__ == '__main__':
-    dataset_folder = '/data/projects/swat/users/eladc/project/dataset_2x2d'
+    dataset_folder = '/project/dataset_2x2d'
     with_labels = False
     labels = []
     is_gape_list = []

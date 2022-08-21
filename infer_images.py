@@ -69,15 +69,13 @@ if __name__ == '__main__':
     args = parse_args()
     update_config(cfg, args)
 
-    output_dir = "/data/projects/swat/users/eladc/project/results"
+    output_dir = "/data/path/results"
     if cfg.MODEL.NAME.lower() == 'lpn':
         get_model = models.lpn.get_pose_net
     else:
         raise NotImplemented
     model = get_model(cfg, is_train=False).cuda()
-    # model.load_state_dict(torch.load('/data/projects/swat/results/eladc/fish_landmarks/20220314_103409__with_preprocess/state_dict.pth'))
-    # model.load_state_dict(torch.load('/data/projects/swat/results/eladc/fish_landmarks/20220319_123018__with_preprocess_and_stats/state_dict.pth'))
-    model.load_state_dict(torch.load('/data/projects/swat/results/eladc/fish_landmarks/20220320_213800__with_preprocess_and_stats/state_dict.pth'))
+    model.load_state_dict(torch.load('/data/path/state_dict.pth'))
 
     VAL_SPLIT = [0, 4, 12, 16, 21, 26, 33, 39]
     if False:  # train

@@ -28,11 +28,11 @@ class Dataset2x2D(Dataset):
     _LANDMARK_FLIP = [0, 1, 2, 3, 4, 5, 7, 6, 9, 8]
 
     def __init__(self,
-                 imgs_folder="/data/projects/swat/users/eladc/project/dataset_2x2d",
-                 label_file="/data/projects/swat/users/eladc/project/dataset_2x2d/labels.pickle",
-                 cal_file="/data/projects/swat/users/eladc/project/dataset_2x2d/cal_mats.pickle",
-                 gape_file="/data/projects/swat/users/eladc/project/dataset_2x2d/gape.pickle",
-                 plate_file="/data/projects/swat/users/eladc/project/dataset_2x2d/plate.pickle",
+                 imgs_folder="/data/path/dataset_2x2d",
+                 label_file="/data/path/labels.pickle",
+                 cal_file="/data/path/cal_mats.pickle",
+                 gape_file="/data/path/gape.pickle",
+                 plate_file="/data/path/plate.pickle",
                  transform=None, np_transforms=None, reutrn_target_as_heatmaps=True, heatmap_size=(96, 96),
                  sigma=1, image_size=384, train=True, val_split=0.2, num_input_images=3,
                  use_prev_hm_input=False, fixed_crop_per_vid=False, fixed_crop_ratio=2.0):

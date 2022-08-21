@@ -2,7 +2,7 @@ import cv2 as cv
 import numpy as np
 
 
-input_image = '/data/projects/swat/users/eladc/project/dataset_2d/imgs/img_000000.jpg'
+input_image = '/dataset_2d/imgs/img_000000.jpg'
 src = cv.imread(cv.samples.findFile(input_image))
 src = cv.resize(src, (261, 302))
 if src is None:

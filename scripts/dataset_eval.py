@@ -115,7 +115,7 @@ if __name__ == '__main__':
             pin_memory=cfg.PIN_MEMORY
         )
 
-    output_dir = "/data/projects/swat/users/eladc/project/results/dataset_eval"
+    output_dir = "/results/dataset_eval"
 
     os.makedirs(output_dir, exist_ok=True)
     landmarks_dists_mat_dict = {}

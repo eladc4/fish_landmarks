@@ -30,7 +30,7 @@ class Dataset2D(Dataset):
     _LANDMARK_FLIP = [0, 1, 2, 3, 4, 5, 7, 6, 9, 8]
 
     def __init__(self,
-                 imgs_folder="/data/projects/swat/users/eladc/project/dataset_2d_new",
+                 imgs_folder="",
                  label_file=None,
                  transform=None, np_transforms=None, reutrn_target_as_heatmaps=True, heatmap_size=(96, 96), sigma=1,
                  image_size=384, train=True, val_split=0.2, joints_weight=None, num_input_images=1,
@@ -243,7 +243,7 @@ class Dataset2D(Dataset):
 
 
 if __name__ == '__main__':
-    ds = Dataset2D(imgs_folder=r'C:\eladc\project\dataset_2d_new',
+    ds = Dataset2D(imgs_folder="r'C:\project\dataset_2d_new'",
                    sigma=2, transform=transforms.Compose([transforms.ToTensor(),
                                                           transforms.Normalize(127.5, 127.5)]),
                    np_transforms=[np_preprocess.FlipLeftRight(),
@@ -261,6 +261,6 @@ if __name__ == '__main__':
         for img_index in range(image.size(0)):
             img = show_image_with_keypoints(np.uint8(image.detach().cpu().numpy()[img_index, 0, :, :]*127.5+127.5),
                                             target.detach().cpu().numpy()[img_index, ...])
-            img.save(f'/data/projects/sw_results/eladc/project/fish_train_images/{i}_{img_index}.jpg')
+            img.save(f'/data/path/fish_train_images/{i}_{img_index}.jpg')
         # img.show()
         a=1

@@ -5,15 +5,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-output_folder = '/Vols/vol_design/tools/swat/users/eladc/project/results/report_final_params'
+output_folder = '/results/report_final_params'
 os.makedirs(output_folder, exist_ok=True)
 
-# folders_list = ['/Vols/vol_design/tools/swat/users/eladc/project/results/20220511_173611__crop_landmarks_first_max_angle_10_no_squash_random_cropFIS_75',
-#                 '/data/projects/swat/users/eladc/project/results/20220515_002917__same_as_75_input_576FIS_82',
-#                 '/data/projects/swat/users/eladc/project/results/20220522_221719__hrnet_576_FIS_99',
-#                 '/Vols/vol_design/tools/swat/users/eladc/project/results/20220526_220731__hrnet_384_report',
-#                 '/Vols/vol_design/tools/swat/users/eladc/project/results/20220607_092851__hrnet_384_output_384',
-#                 '/Vols/vol_design/tools/swat/users/eladc/project/results/20220610_233103__hrnet_384_output_384_sigma_4',
+# folders_list = ['/results/20220511_173611__crop_landmarks_first_max_angle_10_no_squash_random_cropFIS_75',
+#                 '/results/20220515_002917__same_as_75_input_576FIS_82',
+#                 '/results/20220522_221719__hrnet_576_FIS_99',
+#                 '/results/20220526_220731__hrnet_384_report',
+#                 '/results/20220607_092851__hrnet_384_output_384',
+#                 '/results/20220610_233103__hrnet_384_output_384_sigma_4',
 #                 ]
 #
 # folders_description_list = ['FIS-75, LPN50 384',
@@ -24,9 +24,9 @@ os.makedirs(output_folder, exist_ok=True)
 #                             'FIS-115, HRNet 384 full res',
 #                             ]
 
-folders_list = ['/data/projects/swat/users/eladc/project/results/20220610_233103__hrnet_384_output_384_sigma_4',
-                '/data/projects/swat/users/eladc/project/results/20220616_000229__hrnet_384',
-                '/data/projects/swat/users/eladc/project/results/20220511_173611__crop_landmarks_first_max_angle_10_no_squash_random_cropFIS_75',
+folders_list = ['/results/20220610_233103__hrnet_384_output_384_sigma_4',
+                '/results/20220616_000229__hrnet_384',
+                '/results/20220511_173611__crop_landmarks_first_max_angle_10_no_squash_random_cropFIS_75',
                 ]
 
 folders_description_list = ['FIS-115, HRNet 384 full res',
@@ -34,8 +34,8 @@ folders_description_list = ['FIS-115, HRNet 384 full res',
                             'FIS-75, LPN50 384',
                             ]
 
-# folders_list = ['/data/projects/swat/users/eladc/project/results/20220616_000229__hrnet_384_linear',
-#                 '/data/projects/swat/users/eladc/project/results/20220616_000229__hrnet_384',
+# folders_list = ['/results/20220616_000229__hrnet_384_linear',
+#                 '/results/20220616_000229__hrnet_384',
 #                 ]
 # folders_description_list = ['FIS-144, HRNet 384 - bicubic',
 #                             'FIS-144, HRNet 384 - linear',

@@ -138,7 +138,7 @@ def DLT(P1, P2, point1, point2):
 # print((x, y, z))
 ##################################
 
-vid_and_label = get_videos_and_csv_labels_list(base_path=r"C:\eladc\project\dataset_src\all_dig_data")[0]
+vid_and_label = get_videos_and_csv_labels_list(base_path=r"C:\project\dataset_src\all_dig_data")[0]
 cams_vidcap = [cv2.VideoCapture(vid_and_label.video1),
                cv2.VideoCapture(vid_and_label.video2)]
 vid_height = cams_vidcap[0].get(cv2.CAP_PROP_FRAME_HEIGHT)

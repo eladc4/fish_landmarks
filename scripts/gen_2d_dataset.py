@@ -53,11 +53,11 @@ def show_image_with_keypoints(i, keypoints):
 
 
 if __name__ == '__main__':
-    dataset_folder = 'C:\eladc\project\dataset_2d_new'
+    dataset_folder = 'C:\project\dataset_2d_new'
     with_labels = False
     labels = []
     img_index = 0
-    videos_and_csv_labels_list = get_videos_and_csv_labels_list(base_path=r"C:\eladc\project\dataset_src\all_dig_data")
+    videos_and_csv_labels_list = get_videos_and_csv_labels_list(base_path=r"C:\project\dataset_src\all_dig_data")
     for i, vid_and_label in enumerate(videos_and_csv_labels_list):
         cams_vidcap = [cv2.VideoCapture(vid_and_label.video1),
                        cv2.VideoCapture(vid_and_label.video2)]

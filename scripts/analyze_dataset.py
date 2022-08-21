@@ -11,7 +11,7 @@ import csv
 from PIL import Image
 
 
-output_dir = '/data/projects/swat/results/eladc/fish_landmarks/dataset_analysis'
+output_dir = '/fish_landmarks/dataset_analysis'
 
 hist_size = (-400, 400)
 prob_map_size = (1000, 1000)

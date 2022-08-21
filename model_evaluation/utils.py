@@ -161,7 +161,7 @@ def calc_max_inds(heatmaps, heatmaps_weight, image_size):
     return _output
 
 
-def load_landmark_diff_stats(stats_file='/data/projects/swat/results/eladc/fish_landmarks/dataset_analysis/diff_stats.csv',
+def load_landmark_diff_stats(stats_file='/fish_landmarks/dataset_analysis/diff_stats.csv',
                              num_landmarks=10, depth=5):
     with open(stats_file, mode='r') as csv_file:
         csv_reader = csv.reader(csv_file)

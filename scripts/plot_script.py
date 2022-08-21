@@ -30,7 +30,7 @@ def on_click(event):
 
 
 fig, ax = plt.subplots()
-im = ax.imshow(mpimg.imread("C:\eladc\project\dataset_2d\imgs\img_000000.jpg"), interpolation='none')
+im = ax.imshow(mpimg.imread("C:\project\dataset_2d\imgs\img_000000.jpg"), interpolation='none')
 ax.format_coord = Formatter(im)
 binding_id = plt.connect('motion_notify_event', on_move)
 plt.connect('button_press_event', on_click)

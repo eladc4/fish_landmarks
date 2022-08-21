@@ -90,7 +90,7 @@ if __name__ == '__main__':
     args = parse_args()
     update_config(cfg, args)
 
-    output_dir = "/data/projects/swat/users/eladc/project/results"
+    output_dir = "/project/results"
     if cfg.MODEL.NAME.lower() == 'lpn':
         get_model = models.lpn.get_pose_net
     elif cfg.MODEL.NAME.lower() == 'pose_hrnet':

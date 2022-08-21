@@ -80,7 +80,7 @@ def show_image_with_keypoints(i, keypoints):
     return source_img.convert('RGB')
 
 
-base_path="/data/projects/swat/users/eladc/project/dataset_src/all_dig_data"
+base_path = "/project/dataset_src/all_dig_data"
 vid1_csv = join(base_path, "10.05.19", "1", "dig", "cut_dig", "1", "f_20190510_150806_20190510_151419.avi")
 vid2_csv = join(base_path, "10.05.19", "1", "dig", "cut_dig", "1", "r_20190510_150806_20190510_151832.avi")
 landmarks_2d_csv = join(base_path, "10.05.19", "1", "dig", "cut_dig", "1", "DLTdv5_data_xypts.csv")
