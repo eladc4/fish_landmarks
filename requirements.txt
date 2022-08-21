@@ -1,0 +1,8 @@
+
+tqdm
+yacs
+
+opencv-python
+matplotlib
+scipy
+pip install json-tricks
