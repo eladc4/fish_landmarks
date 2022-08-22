@@ -20,7 +20,7 @@ import lib.models as models
 from lib.core.loss import JointsMSELoss
 from lib.core.function import AverageMeter, accuracy
 from lib.utils.utils import get_optimizer
-from user_constants_mine import OUTPUT_FOLDER, DEFAULT_DATASET_PATH
+from user_constants import OUTPUT_FOLDER, DEFAULT_DATASET_PATH
 
 
 if __name__ == '__main__':
