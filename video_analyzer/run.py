@@ -247,7 +247,7 @@ if __name__ == '__main__':
             labels[i_vid].append(_labels)
 
     out_3d = []
-    if cal_matrix:
+    if cal_matrix is not False:
         print(f'\nAnalyzing 3D points')
         for i in tqdm(range(num_images)):
             out_3d.append(calc_3d_from_2x2d(labels[0][i], labels[1][i], cal_matrix, geometric=False)[0])
